@@ -15,13 +15,13 @@ import javax.swing.JDialog;
  */
 public class comando extends javax.swing.JPanel {
 
-    private explorer exp=null;
+//    private explorer exp=null;
     private int File;
     private JDialog dial;
     
-    public comando(JDialog dial,explorer exp,int File) {
+    public comando(JDialog dial,int File) {
         this.dial=dial;
-        this.exp=exp;
+//        this.exp=exp;
         this.File=File;
         initComponents();
     }
@@ -102,9 +102,9 @@ public class comando extends javax.swing.JPanel {
 
     private void AceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AceptarActionPerformed
         if( parametro.getText().replaceAll("\\s", "").length()==0)
-         exp.send(File, null);
-        else
-        exp.send(File, parametro.getText());
+//         exp.send(File, null);
+//        else
+//        exp.send(File, parametro.getText());
         dial.dispose();
     }//GEN-LAST:event_AceptarActionPerformed
 
